@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Camera, Mail, Phone, MapPin, Instagram, MessageCircle, Twitter } from "lucide-react"
+import { Camera, Mail, Phone, MapPin, Instagram, MessageCircle, Music } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -83,7 +83,7 @@ export default function PhotographyPortfolio() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Portfolio Gallery</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              A curated selection of my recent work showcasing various photography styles and moments
+              A curated selection of our recent work showcasing various photography styles and moments
             </p>
           </div>
 
@@ -121,28 +121,28 @@ export default function PhotographyPortfolio() {
             <div className="space-y-6">
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/portrait-5.jpg"
-                  alt="Elegant outdoor portrait"
+                  src="/images/outdoor-portrait-new.jpg"
+                  alt="Outdoor portrait in traditional attire"
                   width={300}
                   height={300}
                   className="object-cover w-full h-60 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Elegant Portrait</p>
+                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Outdoor Portrait</p>
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/maternity.jpg"
-                  alt="Maternity photography"
+                  src="/images/couples-portrait.jpg"
+                  alt="Elegant couples portrait with bouquet"
                   width={300}
                   height={400}
                   className="object-cover w-full h-80 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Maternity Session</p>
+                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Couples Portrait</p>
                 </div>
               </div>
             </div>
@@ -150,15 +150,15 @@ export default function PhotographyPortfolio() {
             <div className="space-y-6">
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/portrait-2.jpg"
-                  alt="Casual portrait session"
+                  src="/images/birthday-shoot.jpg"
+                  alt="Birthday photoshoot with cupcake and candle"
                   width={300}
                   height={400}
                   className="object-cover w-full h-80 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Casual Portrait</p>
+                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Birthday Shoots</p>
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
@@ -206,9 +206,17 @@ export default function PhotographyPortfolio() {
                   <li>• 100 edited high-resolution photos</li>
                   <li>• Online gallery for sharing</li>
                   <li>• Photo Album</li>
-                  <li><br></li>
                 </ul>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white">Book Now</Button>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" asChild>
+                  <Link
+                    href="https://wa.link/ij7cqz?text=Hello%20Onpoint%20Photography!%20I'm%20interested%20in%20your%20Wedding%20Photography%20package%20(UGX%201M).%20I'd%20like%20to%20inquire%20more%20about:%0A%0A-%20Available%20dates%0A-%20Package%20details%0A-%20Booking%20process%0A%0APlease%20let%20me%20know%20more%20information."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Inquire More
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
@@ -227,11 +235,15 @@ export default function PhotographyPortfolio() {
                   <li>• Around Studio</li>
                   <li>• Online gallery access</li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-white"
-                >
-                  Learn More
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" asChild>
+                  <Link
+                    href="https://wa.link/ij7cqz?text=Hello%20Onpoint%20Photography!%20I'm%20interested%20in%20booking%20a%20Portrait%20Session%20(UGX%2050,000).%20I'd%20like%20to%20book:%0A%0A-%20Individual/Couple/Family%20portrait%0A-%20Preferred%20date%20and%20time%0A-%20Any%20special%20requirements%0A%0APlease%20confirm%20availability."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Book Now
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -249,13 +261,16 @@ export default function PhotographyPortfolio() {
                   <li>• Professional event coverage</li>
                   <li>• Quick turnaround (48 hours)</li>
                   <li>• High-resolution images</li>
-                  <li><br></li>
                 </ul>
-                <Button
-                  variant="outline"
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-white"
-                >
-                  Get Quote
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" asChild>
+                  <Link
+                    href="https://wa.link/ij7cqz?text=Hello%20Onpoint%20Photography!%20I'm%20interested%20in%20getting%20a%20quote%20for%20Event%20Photography%20(UGX%20100,000).%20Please%20provide%20a%20quote%20for:%0A%0A-%20Event%20type:%20%0A-%20Event%20date:%20%0A-%20Event%20duration:%20%0A-%20Location:%20%0A-%20Special%20requirements:%20%0A%0AThank%20you!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Get Quote
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -337,7 +352,16 @@ export default function PhotographyPortfolio() {
                     className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-500"
                   />
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white">Send Message</Button>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white" asChild>
+                  <Link
+                    href="https://wa.link/ij7cqz?text=Hello%20Onpoint%20Photography!%20I'm%20interested%20in%20your%20photography%20services.%20Here%20are%20my%20details:%0A%0AName:%20%0AEmail:%20%0AService%20Needed:%20%0AMessage:%20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Send via WhatsApp
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
@@ -368,22 +392,31 @@ export default function PhotographyPortfolio() {
                     variant="outline"
                     size="icon"
                     className="border-primary text-primary hover:bg-primary hover:text-white"
+                    asChild
                   >
-                    <Instagram className="h-4 w-4" />
+                    <Link href="https://www.instagram.com/onpointphotograhy" target="_blank" rel="noopener noreferrer">
+                      <Instagram className="h-4 w-4" />
+                    </Link>
                   </Button>
                   <Button
                     variant="outline"
                     size="icon"
                     className="border-primary text-primary hover:bg-primary hover:text-white"
+                    asChild
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <Link href="https://wa.link/ij7cqz" target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="h-4 w-4" />
+                    </Link>
                   </Button>
                   <Button
                     variant="outline"
                     size="icon"
                     className="border-primary text-primary hover:bg-primary hover:text-white"
+                    asChild
                   >
-                    <Twitter className="h-4 w-4" />
+                    <Link href="https://www.tiktok.com/@onpoint.shots" target="_blank" rel="noopener noreferrer">
+                      <Music className="h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </div>
