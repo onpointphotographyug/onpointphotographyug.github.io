@@ -105,11 +105,11 @@ export default function PhotographyPortfolio() {
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/studio-portrait-new.jpg"
-                  alt="Professional studio portrait session"
+                  src="/images/portrait-1.jpg"
+                  alt="Studio portrait session"
                   width={300}
                   height={300}
-                  className="object-cover object-[center_20%] w-full h-60 group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover w-full h-60 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -121,28 +121,28 @@ export default function PhotographyPortfolio() {
             <div className="space-y-6">
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/outdoor-portrait-new.jpg"
-                  alt="Outdoor portrait in traditional attire"
+                  src="/images/portrait-5.jpg"
+                  alt="Elegant outdoor portrait"
                   width={300}
                   height={300}
                   className="object-cover w-full h-60 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Outdoor Portrait</p>
+                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Elegant Portrait</p>
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/couples-portrait.jpg"
-                  alt="Elegant couples portrait with bouquet"
+                  src="/images/maternity.jpg"
+                  alt="Maternity photography"
                   width={300}
                   height={400}
                   className="object-cover w-full h-80 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Couples Portrait</p>
+                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Maternity Session</p>
                 </div>
               </div>
             </div>
@@ -150,15 +150,15 @@ export default function PhotographyPortfolio() {
             <div className="space-y-6">
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/birthday-shoot.jpg"
-                  alt="Birthday photoshoot with cupcake and candle"
+                  src="/images/portrait-2.jpg"
+                  alt="Casual portrait session"
                   width={300}
                   height={400}
                   className="object-cover w-full h-80 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Birthday Shoots</p>
+                  <p className="font-semibold bg-black/50 px-2 py-1 rounded">Casual Portrait</p>
                 </div>
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">

@@ -7,12 +7,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: [],
     unoptimized: true,
-  },
-  experimental: {
-    optimizeCss: true,
   },
 }
 
-module.exports = nextConfig
+export default nextConfig
