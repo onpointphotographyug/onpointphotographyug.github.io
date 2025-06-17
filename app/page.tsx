@@ -105,11 +105,11 @@ export default function PhotographyPortfolio() {
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/portrait-1.jpg"
-                  alt="Studio portrait session"
+                  src="/images/studio-portrait-new.jpg"
+                  alt="Professional studio portrait session"
                   width={300}
                   height={300}
-                  className="object-cover w-full h-60 group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover object-[center_20%] w-full h-60 group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-primary/20 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
