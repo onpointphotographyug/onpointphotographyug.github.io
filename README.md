@@ -1,1 +1,0 @@
-# onpointphotographyug.github.io
