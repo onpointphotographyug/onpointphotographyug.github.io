@@ -105,7 +105,7 @@ export default function PhotographyPortfolio() {
               </div>
               <div className="relative group overflow-hidden rounded-lg border-2 border-gray-800 hover:border-primary transition-colors duration-300">
                 <Image
-                  src="/images/studio-portrait-new.jpg"
+                  src="/images/_ONP6886 - Copy.jpg"
                   alt="Professional studio portrait session"
                   width={300}
                   height={300}
